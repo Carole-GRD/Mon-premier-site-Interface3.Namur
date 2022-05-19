@@ -1,0 +1,569 @@
+main h2{
+    margin: 50px 0;
+}
+
+.article{
+    margin-bottom: 80px;
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* -----------------------------------  Exercices collectifs   --------------------------------------- */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ---------------------------------   Mise en forme du 1er tableau   ---------------------------------- */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.table1 td, .table1 th{
+    border: 1px solid black; 
+    text-align: center;
+    padding: 7px;
+}
+
+.table1{
+    border-collapse: collapse;
+    width: 100%;
+    caption-side: bottom;                  /* Emplacement (du titre) au-dessus ou en-dessous */
+}
+
+.table1 th{
+    background-color: #214567;
+    color: white;
+}
+
+.table1 td:hover{
+    background-color: #2c6295;
+    color: white;
+    cursor: pointer;                         /* une petite main apparait lorsqu'on survol le tableau */
+}
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* -------------------------------------   Mise en forme du 2e tableau   ----------------------------- */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.table2 th{
+    width: 25%;
+}
+
+.table2{
+    border-collapse: separate;
+    border-spacing: 5px 10px;
+}
+
+.table2 tr:nth-child(even){
+    background-color: rgb(215, 215, 215);
+}
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ----------------------------------   Mise en forme du 3e tableau   -------------------------------- */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.table3{
+    empty-cells: hide;
+    border-spacing: 0;                          /* pour conserver la mise en forme "collée" */
+    border: 1px dashed #214567;
+    padding: 7px 4px;
+}
+
+.table3 td, .table3 th{
+    border: .5px solid #214567;
+}
+
+.vide{
+    background-color: brown;
+}
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ---------------------------------   Mise en forme du 4e tableau   --------------------------------- */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.table4 td{
+    width: 20%;
+}
+
+.vacances{
+    background-color: #2c6295;
+}
+
+/* autre manière de faire que précédemment */
+/* .table4 col[span]{                                                 
+    background-color: #2c6295;
+} */
+
+
+
+
+
+
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* -----------------------------------  Exercices collectifs   --------------------------------------- */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+
+
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ------------------------------------------   TABLEAU 5   ----------------------------------------- */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+
+/* ------------------------------------   mise en place générale   ---------------------------------- */
+
+.lName{
+    font-weight: 600;
+}
+
+.table5 caption{
+    font-style: italic;
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 1.2em;
+    color: rgb(100, 100, 100);
+}
+
+.table5{
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px; 
+    margin: 20px 0;
+    width: 100%;
+    border-spacing: 10px;
+    caption-side: bottom;
+}
+
+.table5 th, .table5 td{
+    border: 2px solid black;
+    border-radius: 3px;
+    padding: 7px;
+}
+
+
+/* -----------------------------------   mise en place des titres   ----------------------------------- */
+
+.table5 th{
+    color: white;
+    font-size: 1.2em;
+}
+
+.table5 th:nth-child(1){
+    background-color: #3f6fc7;
+}
+
+.table5 th:nth-child(2){
+    background-color: #8bc73f;
+}
+
+.table5 th:nth-child(3){
+    background-color: #26c1a3;
+}
+
+
+/* ---------------------------------   mise en place des cellules   ------------------------------------ */
+
+.table5 td:nth-child(1){
+    color: #3f6fc7;
+}
+
+.table5 td:nth-child(2){
+    color: #8bc73f;
+}
+
+.table5 td:nth-child(3){
+    color: #26c1a3;
+}
+
+
+/* -------------------------------------------   HOVER   --------------------------------------------- */
+
+.table5 tr:hover td{                                                 /* .table5 tr:hover > td */
+    background-color: rgb(100, 100, 100);
+    color: white;    
+    cursor: pointer; 
+}
+
+
+
+
+
+
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* --------------------------------------   EXERCICE 5 Bis   ----------------------------------------- */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+
+/* ----------------------------------   mise en place générale   ------------------------------------- */
+
+.lName{
+    font-weight: 600;
+}
+
+.table5Bis caption{
+    text-align: left;
+    margin-bottom: 7px;
+    font-weight: 600;
+    font-size: 1.2em;
+    color: rgb(100, 100, 100);
+}
+
+.table5Bis{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table5Bis tr th:not(.nom), .table5Bis tr td:not(.nom){
+    border-top: 1px solid black;
+}
+
+.table5Bis th, .table5Bis td{
+    padding: 13px;
+    text-align: center;
+    font-size-adjust: inherit;            /* pour que la taille du texte s'adapte à la largeur de la cellule */
+}
+
+
+
+
+/* ----------------------------------   mise en place des titres   ----------------------------------- */
+
+
+.table5Bis tr:nth-child(1) th{
+    background-color: #3f6fc7;
+    color: white;
+}
+
+.table5Bis tr:nth-child(2) th{
+    background-color: #8bc73f;
+    color: white;
+}
+
+.table5Bis tr:nth-child(3) th{
+    background-color: #26c1a3;
+    color: white;
+}
+
+
+/* ---------------------------------   mise en place des cellules   ----------------------------------- */
+
+
+.table5Bis tr td:nth-of-type(odd){
+    background-color: rgb(215, 215, 215);
+}
+
+
+/* --------------------------------------------   HOVER   ---------------------------------------------- */
+
+.table5Bis tr td:hover{
+    background-color: rgb(100, 100, 100);
+    color: white; 
+    cursor: pointer;
+}
+
+
+
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ------------------------------------------   TABLEAU 6   ----------------------------------------- */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+/* ------------------------------------   mise en place générale   ------------------------------------- */
+
+.table6 caption{
+    font-weight: 600;
+    margin-bottom: 7px;
+    color: rgb(100, 100, 100);
+}
+
+.table6{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.2em;
+}
+
+.table6 th, .table6 td{
+    padding: 10px;
+    text-align: center;
+}
+
+
+/* ---------------------------------   mise en place des titres   ------------------------------------- */
+
+.table6 th{
+    background-color: rgb(85, 85, 85);
+    color: white;
+    font-weight: 400;
+}
+
+
+/* ---------------------------------   mise en place des cellules   ----------------------------------- */
+
+.table6 td{
+    background-color: rgb(60, 60, 60);
+}
+
+.table6 tr:nth-of-type(even){
+    color: #3f6fc7;
+}
+
+.table6 tr:nth-of-type(2n+3){
+    color: #8bc73f;
+}
+
+.table6 td[colspan]{
+    font-weight: 600;
+    font-style: italic;
+    color: chocolate;
+}
+
+
+/* -------------------------------------------   HOVER   --------------------------------------------- */
+
+.table6 tr:hover > td{
+    background-color: rgb(30, 30, 30);
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* -------------------------------------------   TABLEAU 7   ----------------------------------------- */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+/* -------------------------------------   mise en place générale   ------------------------------------ */
+
+.table7 caption{
+    font-weight: 600;
+    font-size: 1.2em;
+    margin-bottom: 7px;
+    color: rgb(100, 100, 100);
+}
+
+.table7{
+    width: 100%;
+    border-spacing: 6px;
+}
+
+.table7 th, .table7 td{
+    text-align: center;
+    padding: 7px;
+}
+
+
+/* --------------------------------------   mise en place des titres   ----------------------------------- */
+
+.table7 .groupe{
+    text-align: right;
+    padding-right: 15px;
+}
+
+#liste th:nth-child(1){
+    background-color: rgb(30, 30, 30);
+    color: white;
+
+}
+
+#liste th:nth-child(2){
+    background-color: rgb(60, 60, 60);
+    color: white;
+}
+
+#session{
+    background-color: rgb(100, 100, 100);
+    color: white;
+}
+
+.groupeA th{
+    background-color: #3f6fc7;
+    color: white;
+}
+
+.groupeB th{
+    background-color: #8bc73f;
+    color: white;
+}
+
+.groupeC th{
+    background-color: #26c1a3;
+    color: white;
+}
+
+
+/* ---------------------------------   mise en place des cellules   ------------------------------------ */
+
+.table7 td{
+    background-color: rgb(215, 215, 215);
+}
+
+.groupeA td{
+    color: #3f6fc7;
+}
+
+.groupeB td{
+    color: #8bc73f;
+}
+
+.groupeC td{
+    color: #26c1a3;
+}
+
+
+/* --------------------------------------------   HOVER   ------------------------------------------- */
+
+.groupeA:hover > td{
+    background-color: #3f6fc7;
+    color: white;
+    cursor: pointer;
+}
+
+.groupeB:hover > td{
+    background-color: #8bc73f;
+    color: white;
+    cursor: pointer;
+}
+
+.groupeC:hover > td{
+    background-color:#26c1a3;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* -----------------------------------------  TABLEAU 8   -------------------------------------------- */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+.titre{
+    display: block;
+    empty-cells: show;
+
+    /* Decoration */
+    border-spacing: 0;
+   
+}
+
+.titre thead{
+    background-color: rgb(110, 110, 110); 
+    border-radius: 10px 10px 0 0;
+    color: rgb(59, 224, 169); 
+    font-weight: bolder;
+    font-size: 1.3em;
+    position: relative;
+    display: block;
+    width:100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.lignes{
+    max-height: 50vh;
+}
+
+.titre tbody{
+    background-color: rgb(90, 90, 90); 
+    border-radius: 0 0 10px 10px;
+    color: rgb(72, 236, 254); 
+    /* Position */
+    display: block; 
+    position:relative;
+    width:100%; 
+    overflow-y:scroll;
+    overflow-x: hidden; 
+}
+
+.titre tr{
+    width: 100%;
+    display:flex;
+    
+}
+
+.titre tr td{
+    color: white;
+    padding-left: 40px;
+}
+
+.titre tr:hover td{
+    background-color: rgb(50, 50, 50);
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.titre td,.titre th{
+    flex-basis:100%;
+    display: block;
+    padding: 15px;
+    text-align:center;
+}
+
+
+
+/* espace titres */
+
+.titre th:nth-child(1) {
+    flex-grow: 4
+}
+
+.titre th:nth-child(2) {
+    flex-grow: 1;
+}
+
+.titre th:nth-child(3) {
+    flex-grow: 4
+}
+
+.titre th:nth-child(4) {
+    flex-grow: 4
+}
+
+.titre th:nth-child(5) {
+    flex-grow: 1;
+}
+
+
+/* espace colonnes */
+
+.titre td:nth-child(1) {
+    flex-grow: 4
+}
+
+.titre td:nth-child(2) {
+    flex-grow: 1;
+}
+
+.titre td:nth-child(3) {
+    flex-grow: 4
+}
+
+.titre td:nth-child(4) {
+    flex-grow: 4
+}
+
+.titre td:nth-child(5) {
+    flex-grow: 1;
+}
+
+
+
+

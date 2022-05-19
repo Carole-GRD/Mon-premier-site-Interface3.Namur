@@ -1,0 +1,51 @@
+
+input{
+    display: block;
+    margin-bottom: 15px;
+    padding: 5px;
+    background-color: rgb(235, 235, 235);
+    border: none;
+    border-bottom: 1px solid #214567;
+}
+
+input:focus{
+    outline: none;    
+}
+
+/* ::placeholder  -> sélecteur d'attribut */
+
+form{
+    width: 50%;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 25px 5px;
+    background-color: #cbd2d9;
+}
+
+fieldset{
+    padding: 25px 5px;
+    color: #214567;
+    font-weight: bolder;
+    border-color: 1px solid #214567;
+    background-color: rgb(230, 230, 230);
+}
+
+label{
+    color: rgb(50, 50, 50);
+    font-weight: 400;
+}
+
+
+input[type="submit"]{
+    background-color: #3b7fc0;
+    width: 50%;
+    padding: 7px 0;
+    border: 1px solid #214567;
+    
+}
+
+input[type="submit"]:hover{
+    background-color: #214567;
+    color: white;
+}

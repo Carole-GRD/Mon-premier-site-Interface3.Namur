@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon premier site web - Tableaux</title>
+    <meta name="description" content="Mise en forme de tableaux en HTML">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/tableaux.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <!-- Image ajoutée via le CSS -->
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="javascript.html">Javascript</a></li>
+                <li><a href="tableaux.html">Tableaux</a></li>
+                <li><a href="formulaire.html">Formulaire</a></li>
+                <li><a href="https://www.interface3namur.be" target="_blank">Interface3.Namur</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Tableaux</h1>
+
+        <section>
+
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<!-- -----------------------------------  Exercices collectifs   --------------------------------------- -->
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            
+            <h2>Mise en forme de tableaux - Exercices collectifs</h2>
+
+            <article>
+                <h3>Tableaux organisés en colonnes (1e tr composé de th)</h3>
+                <table class="table1">
+                    <tr>
+                        <th>Titre 1</th>
+                        <th>Titre 2</th>
+                        <th>Titre 3</th>
+                        <th>Titre 4</th>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                    </tr>
+                </table>
+            </article>
+
+
+            <article>
+                <h3>Tableaux organisés en lignes (1er élément de chaque tr est un th)</h3>
+                <table class="table1 table2">
+                    <tr>
+                        <th>Titre de ligne 1</th>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <th>Titre de ligne 2</th>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <th>Titre de ligne 3</th>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <th>Titre de ligne 4</th>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                    </tr>
+                </table>
+            </article>
+
+
+            <article>
+                <h3>Tableaux organisés en lignes et colonnes</h3>
+                <table class="table1 table2 table3">
+                    <tr>
+                        <th></th>
+                        <th scope="col">Titre colonne 1</th>
+                        <th scope="col">Titre colonne 2</th>
+                        <th scope="col">Titre colonne 3</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">Titre ligne 1</th>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Titre ligne 2</th>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Ttire ligne 3</th>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Titre ligne 4</th>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Titre ligne 5</th>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                    </tr>
+                </table>
+            </article>
+
+
+            <article>
+                <h3>Tableaux avec en-tête, corps et pied de page</h3>
+
+                <table class="table1">
+                    <caption>Salaire des employés</caption>
+                    <thead>
+                        <tr>
+                            <th>Nom de l'employé</th>
+                            <th>Salaire</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Dupont</td>
+                            <td>1800</td>
+                        </tr>
+                        <tr>
+                            <td>Gérard</td>
+                            <td>1850</td>
+                        </tr>
+                        <tr>
+                            <td>Wick</td>
+                            <td>1825</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>Total</th>
+                            <td>5475</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </article>
+
+
+            <article>
+                <h3>Fusionner les cellules de colonnes (colspan)</h3>
+                <table class="table1">
+                    <tr>
+                        <th>Titre col 1</th>
+                        <th>Titre col 2</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td class="vide"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">5</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>7</td>
+                    </tr>
+                </table>
+            </article>
+
+
+            <article>
+                <h3>Fusionner les cellules lignes (rowspan)</h3>
+                <table class="table1">
+                    <tr>
+                        <th>Titre col 1</th>
+                        <th>Titre col 2</th>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">1</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td class="vide">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>5</td>
+                    </tr>
+                </table>
+            </article>
+
+
+            <article>
+                <h3>L'élément colgroup</h3>
+                <table class="table1 table4">
+                    <caption>Vacances</caption>
+                    <colgroup>                                   <!-- directement après table ou caption -->     
+                        <col>
+                        <col>
+                        <col span="2" class="vacances">
+                        <col>
+                    </colgroup>
+                    <tr>
+                        <th>Mai</th>
+                        <th>Juin</th>
+                        <th>Juillet</th>
+                        <th>Août</th>
+                        <th>Septembre</th>
+                    </tr>
+                    <tr>
+                        <td>x</td>
+                        <td>x</td>
+                        <td>x</td>
+                        <td>x</td>
+                        <td>x</td>
+                    </tr>
+                    <tr>
+                        <td>x</td>
+                        <td>x</td>
+                        <td>x</td>
+                        <td>x</td>
+                        <td>x</td>
+                    </tr>
+                    <tr>
+                        <td>x</td>
+                        <td>x</td>
+                        <td>x</td>
+                        <td>x</td>
+                        <td>x</td>
+                    </tr>
+                    <tr>
+                        <td>x</td>
+                        <td>x</td>
+                        <td>x</td>
+                        <td>x</td>
+                        <td>x</td>
+                    </tr>
+                    <tr>
+                        <td>x</td>
+                        <td>x</td>
+                        <td>x</td>
+                        <td>x</td>
+                        <td>x</td>
+                    </tr>
+                </table>
+            </article>
+
+
+
+
+
+
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<!-- -----------------------------------  Exercices individuels   -------------------------------------- -->
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+
+            <h2>Mise en forme de tableaux - Exercices individuels</h2>
+
+
+
+<!-- =========================================  TABLEAU 5   ============================================ -->
+            
+            <article>
+                <h3>Exercice n°1</h3>
+                
+                <table class="table5">
+                    <caption>Tableau</caption>
+                    <tr>
+                        <th>Nom et prénom</th>
+                        <th>Adresse email</th>
+                        <th>Date de naissance</th>
+                    </tr>
+                    <tr>
+                        <td>Dana <span class="lName">Smith</span></td>
+                        <td>dana@smith.com</td>
+                        <td>29-09-1979</td>
+                    </tr>
+                    <tr>
+                        <td>John <span class="lName">Doe</span></td>
+                        <td>j.doe@skynet.com</td>
+                        <td>05-05-1988</td>
+                    </tr>
+                    <tr>
+                        <td>Alex 'Sacha' <span class="lName">Trusk</span></td>
+                        <td>sacha@trusk.com</td>
+                        <td>12-02-1991</td>
+                    </tr>
+                    <tr>
+                        <td>Marie <span class="lName">Collin</span></td>
+                        <td>marie.collin@live.fr</td>
+                        <td>07-04-1953</td>
+                    </tr>
+                    <tr>
+                        <td>Damian <span class="lName">De Konings</span></td>
+                        <td>damian@de-konings.com</td>
+                        <td>27-06-1984</td>
+                    </tr>
+                </table>
+            </article>
+
+<!-- =======================================  TABLEAU 5 BIS   ========================================== -->
+
+            <article  class="article">
+                <table class="table5Bis">
+                    <caption>Tableau</caption>
+                    <tr>
+                        <!-- La classe "nom" sert à exclure le sélecteur afin de mettre un border-top sur chaque cellule sauf celles de la 1ère ligne :   
+                        .table1Bis tr th:not(.nom), .table1Bis tr td:not(.nom)-->
+                        <th class="nom">Nom et prénom</th>
+                        <td class="nom">Dana <span class="lName">Smith</span></td>     <!--lName sert à mettre les noms de famille en gras-->
+                        <td class="nom">John <span class="lName">Doe</span></td>
+                        <td class="nom">Alex 'Sacha' <span class="lName">Trusk</span></td>
+                        <td class="nom">Marie <span class="lName">Collin</span></td>
+                        <td class="nom">Damian <span class="lName">De Konongs</span></td>
+                    </tr>
+                    <tr>
+                        <th>Adresse email</th>
+                        <td>dana@smith.com</td>
+                        <td>j.doe@skynet.com</td>
+                        <td>sacha@trusk.com</td>
+                        <td>marie.collin@live.fr</td>
+                        <td>damian@de-konings.com</td>
+                    </tr>
+                    <tr>
+                        <th>Date de naissance</th>
+                        <td>29-09-1979</td>
+                        <td>05-05-1988</td>
+                        <td>12-02-1991</td>
+                        <td>07-04-1953</td>
+                        <td>27-06-1984</td>
+                    </tr>
+                </table>
+            </article>
+
+
+<!-- ================================================   TABLEAU 6   ============================================== -->
+
+            <article class="article">
+                <h3>Exercie n°2</h3>
+                <table class="table6">
+                    <caption>Tableau</caption>
+                    <tr>
+                        <th>SESSION N°1</th>
+                        <th>SESSION N°2</th>
+                        <th>SESSION N°3</th>
+                    </tr>
+                    <tr>
+                        <td>Ligne n°1 - Cellule n°1</td>
+                        <td>Ligne n°1 - Cellule n°2</td>
+                        <td>Ligne n°1 - Cellule n°3</td>
+                    </tr>
+                    <tr>
+                        <td>Ligne n°2 - Cellule n°1</td>
+                        <td>Ligne n°2 - Cellule n°2</td>
+                        <td>Ligne n°2 - Cellule n°3</td>
+                    </tr>
+                    <tr>
+                        <td>Ligne n°3 - Cellule n°1</td>
+                        <td>Ligne n°3 - Cellule n°2</td>
+                        <td>Ligne n°3 - Cellule n°3</td>
+                    </tr>
+                    <tr>
+                        <td>Ligne n°4 - Cellule n°1</td>
+                        <td colspan="2">- Ligne n°4 - Cellule n°2 & n°3 -</td>
+                    </tr>
+                    <tr>
+                        <td>Ligne n°5 - Cellule n°1</td>
+                        <td>Ligne n°5 - Cellule n°2</td>
+                        <td>Ligne n°5 - Cellule n°3</td>
+                    </tr>
+                    <tr>
+                        <td>Ligne n°6 - Cellule n°1</td>
+                        <td>Ligne n°6 - Cellule n°2</td>
+                        <td>Ligne n°6 - Cellule n°3</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">- Ligne n°7 - Cellule n°1, n°2 & n°3 -</td>
+                    </tr>
+                    <tr>
+                        <td>Ligne n°8 - Cellule n°1</td>
+                        <td>Ligne n°8 - Cellule n°2</td>
+                        <td>Ligne n°8 - Cellule n°3</td>
+                    </tr>
+                    <tr>
+                        <td>Ligne n°9 - Cellule n°1</td>
+                        <td>Ligne n°9 - Cellule n°2</td>
+                        <td>Ligne n°9 - Cellule n°3</td>
+                    </tr>
+                </table>
+            </article>
+
+
+<!-- ==================================================   TABLEAU 7   ========================================= -->
+
+            <article class="article">
+                <h3>Exercice n°3</h3>
+                <table class="table7">
+                    <caption>Tableau</caption>
+                    <!-- Liste des groupes -->
+                    <tr id="liste">
+                        <th rowspan="2">LISTE DES GROUPES</th>
+                        <th colspan="3">LISTE DES SESSIONS</th>
+                    </tr>
+                    <tr id="session">
+                        <th>SESSION 1</th>
+                        <th>SESSION 2</th>
+                        <th>SESSION 3</th>
+                    </tr>
+
+                    <!-- GROUPE A -->
+                    <tr class="groupeA">
+                        <th rowspan="3" class="groupe">GROUPE A</th>
+                        <td>Ligne n°1 - Cellule n°2</td>
+                        <td>Ligne n°1 - Cellule n°3</td>
+                        <td>Ligne n°1 - Cellule n°4</td>
+                    </tr>
+                    <tr class="groupeA">
+                        <td>Ligne n°2 - Cellule n°2</td>
+                        <td>Ligne n°2 - Cellule n°3</td>
+                        <td rowspan="2">Ligne n°2 & n°3 - Cellule n°4</td>
+                    </tr>
+                    <tr class="groupeA">
+                        <td>Ligne n°3 - Cellule n°2</td>
+                        <td>Ligne n°3 - Cellule n°3</td>
+                    </tr>
+
+                    <!-- GROUPE B -->
+                    <tr class="groupeB">
+                        <th rowspan="3" class="groupe">GROUPE B</th>
+                        <td colspan="2">Ligne n°4 - Cellule n°2 & n°3</td>
+                        <td>Ligne n°4 - Cellule n°4</td>
+                    </tr>
+                    <tr class="groupeB">
+                        <td>Ligne n°5 - Cellule n°2</td>
+                        <td>Ligne n°5 - Cellule n°3</td>
+                        <td>Ligne n°5 - Cellule n°4</td>
+                    </tr>
+                    <tr class="groupeB">
+                        <td>Ligne n°6 - Cellule n°2</td>
+                        <td>Ligne n°6 - Cellule n°3</td>
+                        <td>Ligne n°6 - Cellule n°4</td>
+                    </tr>
+
+                    <!-- GROUPE C -->
+                    <tr class="groupeC">
+                        <th rowspan="3" class="groupe">GROUPE C</th>
+                        <td colspan="3">Ligne n°7 - Cellule n°2, n°3 & n°4</td>
+                    </tr>
+                    <tr class="groupeC">
+                        <td>Ligne n°8 - Cellule n°2</td>
+                        <td>Ligne n°8 - Cellule n°3</td>
+                        <td>Ligne n°8 - Cellule n°4</td>
+                    </tr>
+                    <tr class="groupeC">
+                        <td>Ligne n°9 - Cellule n°2</td>
+                        <td>Ligne n°9 - Cellule n°3</td>
+                        <td>Ligne n°9 - Cellule n°4</td>
+                    </tr>
+                </table>
+            </article>
+
+
+
+
+
+
+<!-- ==================================================   TABLEAU 8   ========================================= -->
+
+            <article  class="article">
+                <h3>Exercice n°4 - Défi !</h3>
+                
+                <div class="container">        <!-- correspond à l'article -->
+                    
+                  <table class="titre">
+                    <thead>
+                        <tr>
+                            <th>CLUB</th>
+                            <th>SPORT</th>
+                            <th>HORAIRE</th>
+                            <th>COACH</th>
+                            <th>SALLE</th>
+                        </tr>
+                    </thead>
+
+                    <tbody class="lignes">
+                        <tr>
+                            <td>Nom du club n°1</td>
+                            <td>Karaté</td>
+                            <td>16:00 - 18:00</td>
+                            <td>Perceval de Galles</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>Nom du club n°2</td>
+                            <td>la Force</td>
+                            <td>06:00 - 10:00</td>
+                            <td>Maître Yoda</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>Nom du club n°3</td>
+                            <td>Natation</td>
+                            <td>22:00 - 00:30</td>
+                            <td>Némo</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>Nom du club n°2</td>
+                            <td>Kendo</td>
+                            <td>10:00 - 12:00</td>
+                            <td>Luke Sywalker</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>Nom du club n°4</td>
+                            <td>Bar</td>
+                            <td>22:00 - 05:00</td>
+                            <td>Homer</td>
+                            <td>20</td>
+                        </tr>
+
+
+                        <tr>
+                            <td>Nom du club n°1</td>
+                            <td>Karaté</td>
+                            <td>16:00 - 18:00</td>
+                            <td>Perceval de Galles</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>Nom du club n°2</td>
+                            <td>la Force</td>
+                            <td>06:00 - 10:00</td>
+                            <td>Maître Yoda</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>Nom du club n°3</td>
+                            <td>Natation</td>
+                            <td>22:00 - 00:30</td>
+                            <td>Némo</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>Nom du club n°2</td>
+                            <td>Kendo</td>
+                            <td>10:00 - 12:00</td>
+                            <td>Luke Sywalker</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>Nom du club n°4</td>
+                            <td>Bar</td>
+                            <td>22:00 - 05:00</td>
+                            <td>Homer</td>
+                            <td>20</td>
+                        </tr>
+
+
+                        <tr>
+                            <td>Nom du club n°1</td>
+                            <td>Karaté</td>
+                            <td>16:00 - 18:00</td>
+                            <td>Perceval de Galles</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>Nom du club n°2</td>
+                            <td>la Force</td>
+                            <td>06:00 - 10:00</td>
+                            <td>Maître Yoda</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>Nom du club n°3</td>
+                            <td>Natation</td>
+                            <td>22:00 - 00:30</td>
+                            <td>Némo</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>Nom du club n°2</td>
+                            <td>Kendo</td>
+                            <td>10:00 - 12:00</td>
+                            <td>Luke Sywalker</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>Nom du club n°4</td>
+                            <td>Bar</td>
+                            <td>22:00 - 05:00</td>
+                            <td>Homer</td>
+                            <td>20</td>
+                        </tr>  
+
+                    </tbody>
+                </table>
+
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <h2>Informations</h2>
+        <p>Site web réalisé dans le cadre de la formation</p>
+        <p><strong>Dev FullStack JS</strong></p>
+        <p><strong>Carole Gérard</strong> &copy;2022</p>
+    </footer>
+</body>
+
+</html>
