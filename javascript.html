@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/javascript.css">
 </head>
 
 <body>
@@ -34,9 +35,185 @@
 
         <section>
             <h2>Mes premiers scripts</h2>
+            <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <!-- 3 façons pour appeler une fonction javascript -->
+            
+            <!-- via un bouton -->
             <article>
-                <h3>Demande et affichage du nom et prénom</h3>
+                <h3>Le bouton qui dit bonjour</h3>
+                <button type="button" onclick="bonjour()">Dites bonjour !</button>
             </article>
+
+            <!-- via un formulaire -->
+            <article>
+                <h3>Dire bonjour depuis un formulaire</h3>
+                <form action="javascript:bonjour()">
+                    <input type="submit" value="Dire bonjour">    <!--submit  pour faire l'action du form-->
+                </form>
+            </article>
+            
+            <!-- via addEventListener -->
+            <article>
+                <h3>Dire bonjour via un addEventListener</h3>
+                <input type="button" value="Dire bonjour" id="direBonjour">
+            </article>
+            <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+            <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <!-- Afficher la réponse sur la page web -->
+            <article>
+                <h3>Réponse du Javascript</h3>
+                <p id="reponseBonjour">Ici va s'afficher la réponse</p>
+            </article>
+            <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+            <article>
+                <h3>Récupération des valeurs et affichage dans la page</h3>
+                <input type="text" name="" id="userFirstName" placeholder="Entrez votre prénom">
+                <input type="text" name="" id="userName" placeholder="Entrez votre nom">
+                <input type="button" value="Envoyez" onclick="exoGuide()">
+                <p id="retourExoGuide"></p>
+            </article>
+
+            <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+            <article>
+                <h3>Concaténation et fonction prompt()</h3>
+                <input type="button" value="Lancer le script" onclick="nomEtPrenom()">
+            </article>
+
+            <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+            <article>
+                <h3>Majeur ou pas ?</h3>
+                <input type="text" name="" id="ageUser" placeholder="Entrez votre âge">
+                <input type="button" value="Tester ma majorité" onclick="exoAge()">
+                <p id="reponseMajorite"></p>
+            </article>
+
+            <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+            <article>
+                <h3>Calcul du prix</h3>
+                <input type="text" name="" id="prixArticle" placeholder="Entrez le prix de l'article">
+                <input type="text" name="" id="nbrArticles" placeholder="Entrez le nombre d'articles">
+                <input type="text" name="" id="tva" placeholder="Entrez le taux de tva">
+                <input type="button" value="Total" onclick="exoPrix()">
+                <!-- <p id="reponsePrixTotal"></p> -->
+                <div id="reponsePrixTotal"></div>
+            </article>
+
+            <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+            <article>
+                <h3>Calul du volume d'une sphère</h3>
+                <input type="text" name="" id="rayon" placeholder="Rayon de la spère (en cm)">
+                <input type="button" value="Volume" onclick="exoVolume()">
+                <p id="reponseVolume"></p>
+            </article>
+
+            <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+            <article>
+                <h3>Possibilité de formation</h3>
+                <input type="text" name="" id="annee_naissance" placeholder="Votre année de naissance">
+                <input type="button" value="Demande de formation" onclick="exoFormation()">
+                <p id="reponseFormation"></p>
+            </article>
+
+            <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+            <article>
+                <h3>Bissextile ou pas ?</h3>
+                <input type="text" name="" id="annee_user" placeholder="Entrez une année">
+                <input type="button" value="Bissextile ou pas ?" onclick="exoBissextile()">
+                <p id="reponseBissextile"></p>
+            </article>
+
+            <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+            <article>
+                <h3>Concordance de mot de passe</h3>
+                <input type="text" name="" id="password_1" placeholder="Choisissez un mot de passe">
+                <input type="text" name="" id="password_2" placeholder="Répétez le mot de passe">
+                <input type="button" value="Valider" onclick="exoPassword()">
+                <p id="reponsePassword"></p>
+            </article>
+
+            <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+            <article>
+                <h3>La condition SWITCH</h3>
+                <input type="text" name="" id="condSwitch" placeholder="nombre entre 1 et 4">
+                <input type="button" name="" id=""   value="Envoyer" onclick="condSwitch()">
+            </article>
+
+            <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+            <article>
+                <h3>Droit ou pas ?</h3>
+                <form action="">
+                    <label for="genres">Votre genre :</label>
+                    <input list="genres" name="" id="genre">
+                        <datalist id="genres">
+                            <option value="homme">
+                            <option value="femme">
+                            <option value="non binaire">
+                        </datalist>
+                    <label for="age">Votre âge : </label>
+                    <input type="text" name="" id="age">
+                    <input type="button" value="Envoyer" onclick="exoDroit()">
+                </form>
+                <p id="reponseDroit"></p>
+            </article>
+            
+            <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+            <!-- bouton avec QCM sur une autre page
+            valider + donner le score et indiquer la bonne réponse en évidence -->
+
+            <article>
+                <h3>Le Quizz !</h3>
+                <button><a href="quizz.html" class="css">Testez-vous</a></button>
+            </article>
+
+
+            <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+            <article>
+                <h3>Première boucle : While</h3>
+                    <input type="button" value="Lancer le script" onclick="boucleWhile()">
+            </article>
+
+            <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+            <article>
+                <h3>Boucle While avec compteur</h3>
+                    <input type="button" value="Lancer le script" onclick="whileCompteur()">
+            </article>
+
+            <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+            <article>
+                <h3>Boucle Do...While</h3>
+                    <input type="button" value="Lancer le script" onclick="boucleDoWhile()">
+            </article>
+
+            <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+            <article>
+                <h3>La boucle For</h3>
+                    <input type="button" value="Lancer le script" onclick="boucleFor()">
+            </article>
+
+            <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+            <article>
+                <h3>Concaténation dans une boucle</h3>
+                    <input type="button" value="Lancer le script" onclick="concaBoucle()">
+            </article>
+
+
         </section>
     </main>
 
@@ -46,6 +223,8 @@
         <p><strong>Dev FullStack JS</strong></p>
         <p><strong>Carole Gérard</strong> &copy;2022</p>
     </footer>
+
+    <script src="./javascript/script.js"></script>
 </body>
 
 </html>
