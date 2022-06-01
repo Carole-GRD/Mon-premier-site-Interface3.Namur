@@ -228,3 +228,24 @@ header nav li{
 
 }
 
+
+
+
+/* -----------------------   ajouts pour les exerices "table de multiplication   ------------------------ */
+
+
+
+
+.flexTable{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.tableMulti{
+    border: 1px solid black;
+    margin: 20px;
+    padding: 20px;
+    
+}

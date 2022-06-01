@@ -145,7 +145,7 @@
             <article>
                 <h3>La condition SWITCH</h3>
                 <input type="text" name="" id="condSwitch" placeholder="nombre entre 1 et 4">
-                <input type="button" name="" id=""   value="Envoyer" onclick="condSwitch()">
+                <input type="button" name="" id="" value="Envoyer" onclick="condSwitch()">
             </article>
 
             <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
@@ -211,6 +211,95 @@
             <article>
                 <h3>Concaténation dans une boucle</h3>
                     <input type="button" value="Lancer le script" onclick="concaBoucle()">
+            </article>
+
+            <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+            <article>
+                <h3>Boucle FOR : Les 15 suivants</h3>
+                <p>Veuillez entrer le nombre de départ : </p>
+                <input type="text" name="" id="nbreUser15Suiv" placeholder="Nombre de départ">
+                <input type="button" value="Boucle FOR" onclick="exoNbrSuiv()">
+                <p id="repNbrSuiv"></p>
+            </article>
+
+            <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+            <article>
+                <h3>Combien en voulez-vous ensuite ?</h3>
+                <p>Veuillez entrer un nombre de départ : </p>
+                <input type="text" id="nbreUserDepart" placeholder="Nombre de départ">
+                <!-- <br> à ne pas utiliser (exceprionnellement) -->
+                <p><br>Combien de nombres suivants voulez-vous ?</p>
+                <input type="text" name="" id="qqtNbrSuiv" placeholder="Combien en voulez-vous ?">
+                <input type="button" value="Nombres suivants" onclick="exoCombNbrSuiv()">
+                <p id="repCombNbrSuiv"></p>
+            </article>
+
+            <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+            <article>
+                <h3>Table de multiplication par...</h3>
+                <p>Veuillez entrer un nombre : </p>
+                <input type="text" id="tableDe" placeholder="Nombre">
+                <input type="button" value="Table de multiplication" onclick="exoTableDe()">
+                <p id="repTableDe"></p>
+            </article>
+
+            <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+            <article>
+                <h3>Table de multiplication de... par...</h3>
+                <div class="tableDePar">
+                    <input type="text" id="tableDePar1" style="text-align: center;" placeholder="Nombre 1">
+                    <input type="button" value=" x ">
+                    <input type="text" id="tableDePar2" style="text-align: center;" placeholder="Nombre 2">
+                    <input type="button" value=" = " onclick="exoTableDePar()">
+                
+                    <div id="repTableDePar"></div>
+                </div>
+            </article>
+
+            <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+            <article>
+                <h3>Table de multiplication</h3>
+                <input type="button" value="Go" onclick="exoTable()">
+                <!-- faire un div pour la réponse, cela permet de faire la mise en forme ! -->
+                <div id="repTable"></div>
+                
+            </article>
+
+            <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+            <article>
+                <h3>Trouver les diviseurs d'un nombre</h3>
+                <input type="text" id="nbrDepartDiviseur" placeholder="Entrez un nombre">
+                <input type="button" value="Diviseurs" onclick="exoDiviseurNombre()">
+                <p id="repDiviseurNombre"></p>
+            </article>
+
+            <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+            <article>
+                <h3>Changer la couleur du body</h3>
+                <legend>Rouge</legend>
+                <!-- onchange = chaque fois qu'on change la valeur, il lance la fonction -->
+                <input type="range" name="rouge" id="rangeRouge" min="0" max="255" value="0" oninput="changeCouleur()">
+                <legend>Vert</legend>
+                <input type="range" name="vert" id="rangeVert" min="0" max="255" value="0" oninput="changeCouleur()">
+                <legend>Bleu</legend>
+                <input type="range" name="bleu" id="rangeBleu" min="0" max="255" value="0" oninput="changeCouleur()">
+                <legend>Alpha</legend>
+                <input type="range" name="alpha" id="rangeAlpha" min="0" max="1" step="0.1" oninput="changeCouleur()">
+            </article>
+
+            <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+            <article>
+                <h3>Test de mot de passe</h3>
+                <input type="password" id="mdpUser" oninput="testMdp()">
+                <div id="repTestMdp"></div>
             </article>
 
 

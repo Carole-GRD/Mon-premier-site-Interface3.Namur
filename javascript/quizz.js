@@ -70,11 +70,15 @@ function resultat(){
     console.log(divFalseReponse);
 
     
-
-    // ne fonctionne pas !!!
+    
     // comment changer le backgroundColor de toutes les réponses fausses choisies par l'utilisateur ???
     divFalseReponse.forEach((elem) =>{
-        elem.style.backgroundColor = "red";
+        console.log(elem);
+        // pour sélectionner la div qui est le parent de l'input
+        console.log(elem.parentNode); 
+        elem.parentNode.style.backgroundColor = "red";
+        // OU BIEN... (avec 'parentElement' au lieu de 'parentNode')
+        // elem.parentElement.style.backgroundColor = "red";
     })
 
     
